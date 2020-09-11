@@ -5,11 +5,6 @@ public class Estagiario extends Pessoa {
     private String instituicao;
     private final Double salario = 800.00;
 
-
-    public double getSalario() {
-        return this.salario;
-    }
-
     public Estagiario(String nome, Integer idade) {
         this.setNome(nome);
         this.setIdade(idade);
@@ -21,8 +16,12 @@ public class Estagiario extends Pessoa {
         this.setInstituicao(instituicao);
     }
 
+    public double getSalario() {
+        return this.salario;
+    }
+
     public String getInstituicao() {
-        return instituicao;
+        return this.instituicao;
     }
 
     public void setInstituicao(String instituicao) {
