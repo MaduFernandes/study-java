@@ -31,3 +31,17 @@ salario_base * 1.33
 nascimento** e **altura**. 
 - Crie um método para imprimir todos dados de uma pessoa. 
 - Crie um método para calcular a idade da pessoa.
+
+#### Bibliotecas Usadas:
+
+- java.util.Calendar
+
+### Atividade 03
+
+- Crie um método chamado **initVetor**, que vai solicitar ao usuário digitar o tamanho de um vetor a ser criado.
+- Se o usuário digitar um tamanho menor ou igual a **0**, deverá solicitar de novo um tamanho válido para o vetor, se o tamanho for válido, então deve solicitar dados ao usuário para preencher o vetor com valores inteiros em todas as posições.
+- Criar um método chamado **invVetor** que inverte o valor do vetor criado. **OBS: a inversão do vetor deve ser feita SEM usar outro vetor intermediário**.
+- Criar um método chamado **evenVetor** que determina quais são os números pares do vetor.
+- Criar um novo vetor com todos os números pares encontrados.
+- Crie um método chamado **printVetor**, o qual vai imprimir um vetor passado como parâmetro.
+- Crie um método **MAIN** onde será usado todos os outros métodos anteriores.
