@@ -4,28 +4,29 @@ import java.util.Scanner;
 
 public class Vetores {
 
-    private Integer vet;
-    private Integer vetPreenchido;
-
-    public Integer[] initVetor() {
+    public static int[] iniciaVetor(){
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Por favor, informe um valor: ");
-        vet = input.nextInt();
+        System.out.println("Digite o tamanho do vetor: ");
+        int tamanhoVetor = input.nextInt();
 
-        if(vet == 0) {
-            System.out.println("Por favor, informar um valor válido");
-            vet = input.nextInt();
+        if (tamanhoVetor == 0 ) {
+            System.out.println("Por favor informar um valor válido.");
         }
+        int[] vetor = new int[tamanhoVetor];
 
-        Integer vet1[] = new Integer[vet];
-
-        for (int i = 0; i <= vet1.length; i++) {
-            System.out.println(i + " Informe um valor");
-            vetPreenchido = input.nextInt();
-            vet1[i] = vetPreenchido;
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println("Informe um valor: ");
+            vetor[i] = input.nextInt();
         }
-        return vet1;
+        return vetor;
     }
+
+    public static void inverteVetor(int[] vetor){
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print(vetor[i] + " ");
+        }
+    }
+
 }
 
